@@ -12,8 +12,13 @@
     --darkgrayishblue:hsl(227, 10%, 46%);
 }
 
+::-webkit-scrollbar {
+    display: none;
+    }
+
 body{
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
@@ -23,7 +28,7 @@ body{
     height: 100vh;
     background-color: var(--darkcyan);
     overflow: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 body::before{
