@@ -23,6 +23,7 @@ body{
     height: 100vh;
     background-color: var(--darkcyan);
     overflow: hidden;
+    overflow-y: hidden;
 }
 
 body::before{
@@ -52,6 +53,16 @@ body::after{
     background-size: auto;
     background-image:  url(images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    overflow-x: hidden;
+    /* border: 1px solid black; */
 }
 
 main{
