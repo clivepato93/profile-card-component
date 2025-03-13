@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* 
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.kumbh-sans-<uniquifier> {
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "YOPQ" 300;
+}
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--Dark-cyan: hsl(185, 75%, 39%);
+	--Very-dark--desaturated--blue: hsl(229, 23%, 23%);
+	--Dark-grayish--blue: hsl(227, 10%, 46%);
+	--Dark-grey: hsl(0, 0%, 59%);
+}
+
+body {
+	background-color: var(--Dark-cyan);
+	display: grid;
+    grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+    width: 100vw;
+	height: 100vh;
+	align-items: center;
+}
+
+img {
+	display: block;
+}
+
+[class$="img"] {
+	position: fixed;
+	z-index: -10;
+}
+
+.top-img {
+	bottom: 50%;
+	right: 50%;
+}
+
+.bottom-img {
+	top: 50%;
+	left: 50%;
+}
+
+main {
+	margin: 0 auto;
+	width: min(100%, 350px);
+	border-radius: 1rem;
+	background-color: white;
+	position: relative;
+}
+
+.card {
+	position: relative;
+}
+
+.pic-container {
+	position: relative;
+	border: 5px solid white;
+	display: flex;
+	justify-content: center;
+
+	height: 70px;
+	border-radius: 50%;
+}
+
+img[src*="victor"] {
+	position: relative;
+	top: -50px;
+	border: 5px solid white;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.card img[alt="pattern"] {
+	width: 100%;
+	border-radius: 1rem 1rem 0 0;
+}
+.info {
+	text-align: center;
+	font-family: "Kumbh Sans", sans-serif;
+}
+
+h1 span {
+	color: var(--Dark-grey);
+	font-weight: 400;
+}
+
+h1 ~ p {
+	color: var(--Dark-grey);
+	font-size: 1rem;
+	border-bottom: 1px solid var(--Dark-grey);
+	margin: 1rem 0;
+	padding-bottom: 2rem;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-around;
+	padding: 1rem 0;
+}
+
+div p:first-of-type {
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+section p:nth-child(2) {
+	color: var(--Dark-grey);
+	font-size: 0.8rem;
+}
+
+.attribution{ 
+    /* position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    bottom: 0; */
+
+}
